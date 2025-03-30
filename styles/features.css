@@ -1,0 +1,274 @@
+.features-section {
+    width: 100%;
+    padding: 100px 15px;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .features-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .features-nav {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .features-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #007bff;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  .features-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 20px;
+    width: 30%;
+    height: 2px;
+    background-color: #007bff;
+  }
+  
+  .features-text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .nav-btns {
+    display: flex;
+    justify-content: center;
+    background-color: #e0e8f0;
+    width: 22%;
+    border-radius: 20px;
+    gap: 10px;
+    padding: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+  }
+  
+  .feature-btn {
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+    background-color: #e0e8f0;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .feature-btn.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .feature-btn:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .features-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+  }
+  
+  .text-block {
+    padding-right: 30px;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: #222;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+  }
+  
+  .text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 25px;
+  }
+  
+  .feature-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .feature-list li {
+    display: flex;
+    align-items: flex-start;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+  }
+  
+  .feature-list li i {
+    color: #007bff;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 4px;
+  }
+  
+  .feature-list li i::before {
+    content: '\2714';
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .image-block {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-block img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 992px) {
+    .features-content {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  
+    .text-block {
+      padding-right: 0;
+      text-align: center;
+    }
+  
+    .image-block {
+      order: 2;
+    }
+  
+    .title {
+      font-size: 30px;
+    }
+  
+    .text {
+      font-size: 13px;
+      margin: 0 auto 20px;
+      max-width: 80%;
+    }
+  
+    .feature-list {
+      text-align: left;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  
+    .feature-list li {
+      font-size: 15px;
+    }
+  
+    .nav-btns {
+      width: 40%;
+      padding: 5px;
+    }
+  
+    .feature-btn {
+      padding: 6px 15px;
+      font-size: 13px;
+    }
+  
+    .title::after {
+      bottom: -8px;
+      width: 60px;
+      height: 3px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .features-section {
+      padding: 60px 15px;
+    }
+  
+    .features-nav {
+      margin-bottom: 60px;
+    }
+  
+    .features-title {
+      font-size: 20px;
+    }
+  
+    .features-title::after {
+      left: 10px;
+      width: 40%;
+    }
+  
+    .features-text {
+      font-size: 12px;
+      max-width: 90%;
+      margin: 0 auto 20px;
+    }
+  
+    .nav-btns {
+      width: 70%;
+      padding: 4px;
+      gap: 6px;
+    }
+  
+    .feature-btn {
+      padding: 5px 12px;
+      font-size: 12px;
+      flex-grow: 1;
+    }
+  
+    .title {
+      font-size: 24px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .title::after {
+      bottom: -6px;
+      width: 50px;
+      height: 2px;
+    }
+  
+    .text {
+      font-size: 12px;
+      max-width: 90%;
+    }
+  
+    .feature-list {
+      max-width: 90%;
+    }
+  
+    .feature-list li {
+      font-size: 14px;
+    }
+  
+    .feature-list li i {
+      font-size: 16px;
+      margin-top: 3px;
+    }
+  }

@@ -1,0 +1,173 @@
+.site-header .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 30px;
+    max-width: 80%;
+    margin: 20px auto 0;
+  }
+  
+  .site-logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  
+  .logo-link {
+    font-family: "Muli", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #233348;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 40px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #1F1534;
+    font-family: "Muli", sans-serif;
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  .link-active {
+    font-weight: 700;
+    color: #3d7de0;
+  }
+  
+  .link {
+    opacity: 0.5;
+    font-weight: 400;
+  }
+  
+  .link:hover {
+    opacity: 1;
+    color: #3d7de0;
+  }
+  
+  .nav-dropdown {
+    position: relative;
+  }
+  
+  .nav-dropdown a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .dropdown-icon {
+    font-size: 12px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px 0;
+    margin-top: 5px;
+    min-width: 150px;
+    z-index: 1000;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 8px 20px;
+    font-size: 16px;
+  }
+  
+  .dropdown-content a:hover {
+    color: #3d7de0;
+  }
+  
+  .nav-dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .action-btn {
+    padding-left: 20px;
+  }
+  
+  .primary-btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #3d7de0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .primary-btn:hover {
+    background-color: #2b65b8;
+  }
+  
+  .btn-text {
+    font-family: "Muli", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: #233348;
+    padding-right: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .site-header .nav-bar {
+      max-width: 90%;
+      padding: 0.5rem 1rem;
+      position: relative;
+    }
+  
+    .logo-link {
+      font-size: 20px;
+    }
+  
+    .nav-links,
+    .action-btn {
+      display: none;
+    }
+  
+    .menu-toggle {
+      display: block;
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .site-header .nav-bar {
+      max-width: 95%;
+      padding: 0.5rem;
+    }
+  
+    .logo-link {
+      font-size: 18px;
+    }
+  
+    .menu-toggle {
+      font-size: 20px;
+    }
+  }

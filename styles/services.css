@@ -1,0 +1,250 @@
+.services-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  
+  .services-list {
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .service {
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    max-width: 200px;
+    flex: 1 1 270px;
+  }
+  
+  .service.yellow {
+    background-color: #FFF9E6;
+  }
+  
+  .service.blue {
+    background-color: #E6F4FF;
+  }
+  
+  .service.green {
+    background-color: #E6F9EF;
+  }
+  
+  .service.pink {
+    background-color: #FFE6E9;
+  }
+  
+  .service-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  .yellow .service-icon {
+    border: 2px solid #E6C15A;
+    color: #E6C15A;
+  }
+  
+  .blue .service-icon {
+    border: 2px solid #3AA0FF;
+    color: #3AA0FF;
+  }
+  
+  .green .service-icon {
+    border: 2px solid #4FD1B1;
+    color: #4FD1B1;
+  }
+  
+  .pink .service-icon {
+    border: 2px solid #FF7B92;
+    color: #FF7B92;
+  }
+  
+  .service-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .service-text {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .services-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service {
+      max-width: 60%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .services-list {
+      gap: 15px;
+      flex-direction: column;
+    }
+  
+    .service {
+      padding: 20px;
+      max-width: 60%;
+    }
+  }
+  
+  .services-section {
+    width: 100%;
+    padding: 60px 15px;
+    background-color: #f8f9fa;
+  }
+  
+  .services-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .services-header h2 {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .services-header h2::after {
+    content: '';
+    width: 80px;
+    border-bottom: 3px solid #007bff;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .services-header p {
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .services-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .service-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .service-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #e6f3ff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+  .service-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .service-name {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .service-desc {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .service-link {
+    color: #4a90e2;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .service-link svg {
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .services-content {
+      grid-template-columns: 1fr;
+      max-width: 80%;
+    }
+  
+    .services-section {
+      padding: 40px 10px;
+    }
+  
+    .services-header h2 {
+      font-size: 28px;
+    }
+  
+    .services-header p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .services-content {
+      max-width: 90%;
+    }
+  
+    .service-top {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .service-icon {
+      width: 40px;
+      height: 40px;
+    }
+  }

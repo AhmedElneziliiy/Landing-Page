@@ -1,0 +1,127 @@
+.testimonials-section {
+    width: 100%;
+    padding: 60px 15px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .testimonials-section h2 {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .testimonials-section h2::after {
+    content: '';
+    width: 80px;
+    border-bottom: 3px solid #007bff;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .subtext {
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+  }
+  
+  .testimonials-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .testimonial {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .info h3 {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .info p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .info div {
+    color: #f5c518;
+    font-size: 14px;
+  }
+  
+  .testimonial p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .testimonials-list {
+      grid-template-columns: 1fr;
+      max-width: 80%;
+    }
+  
+    .testimonials-section h2 {
+      font-size: 28px;
+    }
+  
+    .subtext {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .testimonials-section h2 {
+      font-size: 24px;
+    }
+  
+    .subtext {
+      font-size: 13px;
+    }
+  
+    .testimonial-header img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .info h3 {
+      font-size: 16px;
+    }
+  
+    .info p {
+      font-size: 13px;
+    }
+  
+    .testimonial p {
+      font-size: 13px;
+    }
+  }
